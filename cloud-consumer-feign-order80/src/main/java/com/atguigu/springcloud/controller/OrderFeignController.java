@@ -28,6 +28,12 @@ public class OrderFeignController {
         System.out.println("feign");
         return paymentFeignService.getPaymentById(id);
     }
+
+    @GetMapping(value = "/consumer/payment/feign/timeout")
+    public String paymentFeignTimeout() {
+        //openfeign-ribbon,客户端一般默认等待1s,超过后报错
+        return paymentFeignService.paymentFeignTimeout();
+    }
 }
 
     
