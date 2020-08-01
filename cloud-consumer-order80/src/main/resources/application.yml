@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: cloud-order-service
+    name: cloud-order-com.atguigu.springcloud.service
 
 eureka:
   client:
