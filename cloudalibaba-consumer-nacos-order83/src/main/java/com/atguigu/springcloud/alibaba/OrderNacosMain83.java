@@ -7,15 +7,16 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 /**
  * @program: cloud2020
  * @author: onion
- * @create: 2020-08-21 17:54
+ * @create: 2020-08-24 15:16
  **/
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class PaymentMain9001 {
+public class OrderNacosMain83 {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentMain9001.class, args);
+        SpringApplication.run(OrderNacosMain83.class, args);
     }
+
 }
 
     
