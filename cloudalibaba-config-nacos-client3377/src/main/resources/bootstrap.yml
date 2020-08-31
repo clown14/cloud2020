@@ -11,4 +11,7 @@ spring:
       config:
         server-addr: localhost:8848 #Nacos 作为配置中心地址
         file-extension: yaml #指定yaml格式配置
+        group: DEV_GROUP
+        namespace: afcfc8a9-e58d-4407-b1e4-1c2a47fd16bb
+
 
