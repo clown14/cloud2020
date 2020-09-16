@@ -26,7 +26,7 @@ public class PaymentController {
     static {
         hashMap.put(1L, new Payment(1L, "23a8c1e3bc2742d8848569819fb42181"));
         hashMap.put(2L, new Payment(2L, "bba8c1e3bc2742d8848569819ac32182"));
-        hashMap.put(3L, new Payment(2L, "6ua8c1e3bc2742d8848569819xt92183"));
+        hashMap.put(3L, new Payment(3L, "6ua8c1e3bc2742d8848569819xt92183"));
     }
 
     @GetMapping("/paymentSQL/{id}")
