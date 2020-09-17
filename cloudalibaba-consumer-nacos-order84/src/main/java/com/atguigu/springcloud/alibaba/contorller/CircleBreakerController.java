@@ -2,9 +2,11 @@ package com.atguigu.springcloud.alibaba.contorller;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
+import com.atguigu.springcloud.alibaba.service.PaymentService;
 import com.atguigu.springcloud.entities.CommonResult;
 import com.atguigu.springcloud.entities.Payment;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -52,6 +54,15 @@ public class CircleBreakerController {
     public CommonResult blockFallback(@PathVariable Long id, BlockException e) {
         Payment payment = new Payment(id, "null");
         return new CommonResult<>(445, "blockFallback-sentinel限流, blockexception内容: " + e.getMessage(), payment);
+    }
+
+    //OpenFeign
+    @Resource
+    private PaymentService paymentService;
+
+    @GetMapping("/consumer/paymentSQL/{id}")
+    public CommonResult<Payment> paymentSQL(@PathVariable long id) {
+        return paymentService.paymentSQL(id);
     }
 }
 
