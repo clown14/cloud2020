@@ -1,6 +1,6 @@
 package com.atguigu.springcloud.alibaba.service;
 
-import com.atguigu.springcloud.alibaba.domain.Order;
+import com.atguigu.springcloud.alibaba.domian.Order;
 
 /**
  * @program: cloud2020

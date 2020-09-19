@@ -1,6 +1,6 @@
 package com.atguigu.springcloud.alibaba.dao;
 
-import com.atguigu.springcloud.alibaba.domain.Order;
+import com.atguigu.springcloud.alibaba.domian.Order;
 import feign.Param;
 import org.apache.ibatis.annotations.Mapper;
 

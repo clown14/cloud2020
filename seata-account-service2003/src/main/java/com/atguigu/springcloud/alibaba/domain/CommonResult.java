@@ -7,20 +7,21 @@ import lombok.NoArgsConstructor;
 /**
  * @program: cloud2020
  * @author: onion
- * @create: 2020-09-18 16:11
+ * @create: 2020-09-19 13:28
  **/
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CommonResult<T> {
-
+public class CommonResult<T>
+{
     private Integer code;
-    private String message;
-    private T data;
+    private String  message;
+    private T       data;
 
-    public CommonResult(Integer code, String message){
-        this(code, message, null);
+    public CommonResult(Integer code, String message)
+    {
+        this(code,message,null);
     }
 }
 

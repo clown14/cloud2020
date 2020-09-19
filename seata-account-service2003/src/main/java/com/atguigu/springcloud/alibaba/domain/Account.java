@@ -9,24 +9,35 @@ import java.math.BigDecimal;
 /**
  * @program: cloud2020
  * @author: onion
- * @create: 2020-09-18 16:11
+ * @create: 2020-09-19 13:25
  **/
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Order {
+public class Account {
 
     private Long id;
-    private Long userId;
-    private Long productId;
-    private Integer count;
-    private BigDecimal money;
 
-    /*
-        订单状态： 0：创建中；1：已完成；
+    /**
+     * 用户id
      */
-    private Integer status;
+    private Long userId;
+
+    /**
+     * 总额度
+     */
+    private BigDecimal total;
+
+    /**
+     * 已用额度
+     */
+    private BigDecimal used;
+
+    /**
+     * 剩余额度
+     */
+    private BigDecimal residue;
 }
 
 
