@@ -10,6 +10,7 @@ spring:
       name: config  #配置文件名称
       profile: dev  #读取后缀名称 master上的config-dev.yml
       uri: http://localhost:3344
+
   rabbitmq:
     host: localhost
     port: 5672

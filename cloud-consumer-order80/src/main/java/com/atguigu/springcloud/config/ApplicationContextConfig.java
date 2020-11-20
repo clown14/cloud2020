@@ -19,5 +19,6 @@ public class ApplicationContextConfig {
         return new RestTemplate();
     }
 }
+//等价于ApplicationContext.xml <bean id="" class="">
 
     

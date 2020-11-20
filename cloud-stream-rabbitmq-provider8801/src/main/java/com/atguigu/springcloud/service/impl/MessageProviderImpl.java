@@ -15,7 +15,7 @@ import java.util.UUID;
  * @create: 2020-08-19 16:00
  **/
 
-@EnableBinding(Source.class)
+@EnableBinding(Source.class)//定义消息的推送管道
 public class MessageProviderImpl implements IMessageProvider {
 
     @Resource
